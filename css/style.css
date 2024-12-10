@@ -26,112 +26,167 @@ header .logo{
 }
 
 
-
-.logo{
-    width: 10vw;
-
+/* Generel styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: black;
 }
 
+.logo {
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hovedmenu styling */
 header .navbar ul {
+    display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Afstand mellem hovedmenu-punkter */
 }
 
 header .navbar ul li {
-    position: relative;
-    float: left;
+    position: relative; /* Forankring til undermenu */
 }
 
-
-/* Styling af hovedmenu og undermenu */
 header .navbar ul li a {
-    box-sizing: border-box;
     text-decoration: none;
     font-size: 23px;
     padding: 18px 70px;
-    color: white;
     display: block;
     text-align: center;
+    color: #ff00ff; /* Neonpink tekstfarve */
+    background: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Hovereffekt til menupunkterne */
 header .navbar ul li a:hover {
-    background: rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
 
-/* Første niveau af undermenu */
+/* Undermenu styling */
 header .navbar ul li ul {
-    box-sizing: border-box;
     position: absolute;
-    left: 0;
-    width: 200px; /* Ensartet bredde */
-    background: transparent; /* Let baggrundsfarve for synlighed */
+    top: 100%; /* Starter lige under teksten i hovedmenuen */
+    left: 0; /* Ligger direkte under hovedmenuens punkt */
+    width: 100%; /* Matcher hovedmenuens bredde */
+    background: black; /* Sort baggrund */
+    display: none; /* Skjuler undermenu som standard */
+    z-index: 1000;
+    padding: 0;
+    list-style: none;
+}
+
+header .navbar ul li:hover > ul {
+    display: block; /* Viser undermenu ved hover */
+}
+
+header .navbar ul li ul li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Kant mellem undermenu-punkter */
+}
+
+header .navbar ul li ul li a {
+    padding: 10px 20px; /* Mindre padding til undermenu-punkter */
+    text-align: left;
+    color: #fff;
+    display: block;
+}
+
+header .navbar ul li ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ff00ff; /* Neonpink tekstfarve ved hover */
+}
+
+/* Flere niveauer af undermenu */
+header .navbar ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Placerer næste niveau til højre for første niveau */
+    width: 200px;
+    background: black;
     display: none;
     padding: 0;
 }
 
-header .navbar ul li ul li {
-    width: 100%; /* Ensartet bredde */
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Lysere kant for synlighed */
-}
-
-/* Styling af undermenu links */
-header .navbar ul li ul li a {
-    padding: 10px 0; /* Juster padding for centrering */
-    color: white; /* Sørger for, at teksten er synlig */
-    text-align: center;
-    width: 100%; /* Fyld hele bredden af menuen */
-    display: block;
-    box-sizing: border-box;
-}
-
-header .navbar ul li ul li a:hover {
-    background: rgba(255, 255, 255, 0.2); /* Lysere hover for synlighed */
-}
-
-/* Næste niveau af undermenu */
-header .navbar ul li ul li ul {
-    left: 100%; /* Justering til højre for første undermenu */
-    top: 0;
-    width: 200px; /* Ensartet bredde */
-    background: transparent; /* Ensartet baggrund */
-    display: none;
-    text-align: center;
-}
-
-header .navbar ul li ul li ul a {
-    padding: 10px 0; /* Juster padding for centrering */
-    text-align: center;
-    width: 100%; /* Fyld hele bredden af menuen */
-    display: block;
-    box-sizing: border-box;
-}
-
-/* Hover-effekt til at vise undermenuer */
-header .navbar ul li:hover > ul,
 header .navbar ul li ul li:hover > ul {
-    display: block;
+    display: block; /* Viser næste niveau ved hover */
 }
 
-/* Gemmer checkboxen */
 #menu-bar {
-    display: none;
+    display: none; /* Skjult som standard */
 }
-
 
 header label {
     font-size: 20px;
     color: #333;
     cursor: pointer;
-    display: none;
+    display: none; /* Skjult på desktop */
 }
 
-header {
-    display: flex; /* Brug flexbox til at arrangere logo og navigation på linje */
-    align-items: center;
-    justify-content: space-between; /* Tilføj afstand mellem logo og navigation */
-    padding: 0 20px; /* Tilføj lidt indrykning på siderne */
-    background-color: black; /* Sørg for, at headeren er synlig */
+/* Styling til footer */
+footer.footer {
+    background-color: black; /* Sort baggrund */
+    color: #ff00ff; /* Neonpink tekstfarve */
+    display: flex;
+    flex-direction: row; /* Sørger for at elementerne placeres horisontalt */
+    justify-content: space-between; /* Placerer tekst og ikoner på hver sin side */
+    align-items: center; /* Justerer tekst og ikoner vertikalt */
+    padding: 20px;
+    border-top: 2px solid #ff00ff; /* Neon-linje over footeren */
+    flex-wrap: wrap; /* Sørger for at elementerne ikke overlapper på små skærme */
+}
+
+/* Styling for footer-text */
+footer.footer .footer-text {
+    display: flex;
+    flex-direction: column; /* Stabler paragraf-elementerne vertikalt */
+    gap: 10px; /* Afstand mellem hvert paragraf-element */
+    flex-grow: 1; /* Giver plads til at de sociale ikoner kan centreres */
+}
+
+/* Tekst styling - venstrejusteret */
+footer.footer p {
+    font-size: 14px;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; /* Neon-effekt på teksten */
+    text-align: left; /* Juster tekst til venstre */
+}
+
+/* Link styling */
+footer.footer a {
+    color: #ff00ff;
+    text-decoration: none;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer.footer a:hover {
+    transform: scale(1.1); /* Gør links større ved hover */
+    text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; /* Neon-effekt ved hover */
+}
+
+/* Social ikoner styling */
+footer.footer .social-icons {
+    display: flex;
+    justify-content: center; /* Censurere ikonerne centralt */
+    gap: 100px; /* Afstand mellem ikoner */
+    margin-top: 20px; /* Tilføj lidt afstand over sociale ikoner */
+    flex-grow: 2; /* Giver plads til ikonerne så de centreres korrekt */
+}
+
+footer.footer .social-icons img {
+    width: 200px; /* Mindre størrelse på ikoner */
+    height: 200px; /* Mindre størrelse på ikoner */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer.footer .social-icons img:hover {
+    transform: scale(1.2); /* Gør ikoner større ved hover */
+    filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
 }
 
 
