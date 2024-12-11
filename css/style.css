@@ -33,7 +33,11 @@ header {
     justify-content: space-between;
     padding: 0 20px;
     background-color: black;
+    position: fixed;
+    z-index: 1000;
 }
+
+
 
 .logo {
     width: 10vw;
@@ -76,7 +80,6 @@ header .navbar ul li ul {
     top: 100%; /* Starter lige under teksten i hovedmenuen */
     left: 0; /* Ligger direkte under hovedmenuens punkt */
     width: 100%; /* Matcher hovedmenuens bredde */
-    background: black; /* Sort baggrund */
     display: none; /* Skjuler undermenu som standard */
     z-index: 1000;
     padding: 0;
@@ -127,6 +130,19 @@ header label {
     color: #333;
     cursor: pointer;
     display: none; /* Skjult på desktop */
+}
+
+.big-pic-støt {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-pic-støt a{
+    position: absolute;
 }
 
 /* Styling til footer */
