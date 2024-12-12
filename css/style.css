@@ -132,6 +132,11 @@ header label {
     display: none; /* Skjult på desktop */
 }
 
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: block;
+}
+
 .big-pic-støt {
     margin: 0;
     padding: 0;
@@ -252,3 +257,90 @@ footer.footer .social-icons img:hover {
 
 
 
+@media (min-width: 425px) and (max-width: 1023){
+    header{
+        padding: 20px;
+     }
+     
+     header label{
+        display: block;
+     }
+     
+     header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #3391c9;
+        border-top: 1px rgba(0,0,0,0.1);
+        display: none;
+     }
+     
+     header .navbar ul li{
+        width: 100%;
+     }
+     
+     header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+     }
+     
+     header .navbar ul li ul li{
+        background: #3391c9;
+     }
+     
+     header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+     }
+     
+     #menu-bar:checked ~ .navbar{
+        display: block;
+     }
+}
+
+@media(max-width: 424px){
+    header{
+        padding: 20px;
+     }
+     
+     header label{
+        display: block;
+     }
+     
+     header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #3391c9;
+        border-top: 1px rgba(0,0,0,0.1);
+        display: none;
+     }
+     
+     header .navbar ul li{
+        width: 100%;
+     }
+     
+     header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+     }
+     
+     header .navbar ul li ul li{
+        background: #3391c9;
+     }
+     
+     header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+     }
+     
+     #menu-bar:checked ~ .navbar{
+        display: block;
+     }  
+}
+
+
+  
+ 
