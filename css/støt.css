@@ -58,11 +58,11 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    font-size: 23px;
+    font-size: 1,5rem;
     padding: 18px 70px;
     display: block;
     text-align: center;
-    color: white; /* Neonpink tekstfarve */
+    color: white; 
     background: transparent;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -101,7 +101,12 @@ header .navbar ul li ul li a {
 
 header .navbar ul li ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
-    color: #06c3fc;
+    color: #00FFFF;
+    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
+    0 0 10px #00FFFF, /* Outer glow */
+    0 0 20px #00FFFF, /* Extended glow */
+    0 0 30px #1E90FF, /* Slight color variation */
+    0 0 40px #1E90FF;;
 }
 
 /* Flere niveauer af undermenu */
@@ -130,6 +135,100 @@ header label {
     display: none; /* Skjult på desktop */
 }
 
+.tak-artikel{
+    display: flex;
+    padding-top: 10rem;
+    align-items: center;
+}
+
+
+
+
+.tak-artikel p, .tak-artikel h1 {
+    padding: 1rem;
+    color: white;
+    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
+    0 0 10px #00FFFF, /* Outer glow */
+    0 0 20px #00FFFF, /* Extended glow */
+    0 0 30px #1E90FF, /* Slight color variation */
+    0 0 40px #1E90FF;;
+
+}
+
+.contribute-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Button Section */
+.contribute-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+    max-width: 40%;
+    padding: 2.5rem;
+}
+
+.contribute-button {
+    font-family: 'Sprite Graffiti', sans-serif;
+    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
+    0 0 10px #00FFFF, /* Outer glow */
+    0 0 20px #00FFFF, /* Extended glow */
+    0 0 30px #1E90FF, /* Slight color variation */
+    0 0 40px #1E90FF;;
+    background-color: transparent;
+    color: #0ff;
+    border: 6px solid #0ff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff inset;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Fjern underlinje for link-knappen */
+    display: inline-block; /* Sørg for, at linket opfører sig som en knap */
+}
+
+.contribute-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
+}
+
+/* Text Section */
+.contribute-info {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contribute-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
+    0 0 10px #00FFFF, /* Outer glow */
+    0 0 20px #00FFFF, /* Extended glow */
+    0 0 30px #1E90FF, /* Slight color variation */
+    0 0 40px #1E90FF;;
+}
+
+.contribute-info p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
+    0 0 10px #00FFFF, /* Outer glow */
+    0 0 20px #00FFFF, /* Extended glow */
+    0 0 30px #1E90FF, /* Slight color variation */
+    0 0 40px #1E90FF;;
+}
 
 
 /* Styling til footer */
@@ -155,7 +254,7 @@ footer.footer .footer-text {
 
 /* Tekst styling - venstrejusteret */
 footer.footer p {
-    font-size: 14px;
+    font-size: 1rem;
     text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
     text-align: left; /* Juster tekst til venstre */
 }

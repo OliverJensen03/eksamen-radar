@@ -103,7 +103,14 @@ header .navbar ul li ul li a {
 
 header .navbar ul li ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
-    color: #ff00ff; /* Neonpink tekstfarve ved hover */
+    color: #b0ff00; /* Neonpink tekstfarve ved hover */
+    text-shadow:  0 0 5px #b0ff00, 
+    0 0 10px #b0ff00, 
+    0 0 20px #7cff00, 
+    0 0 30px #7cff00, 
+    0 0 40px #57ff00, 
+    0 0 50px #57ff00, 
+    0 0 75px #57ff00;;
 }
 
 /* Flere niveauer af undermenu */
@@ -132,61 +139,6 @@ header label {
     display: none; /* Skjult på desktop */
 }
 
-.big-pic-støt {
-    margin: 0;
-    padding: 0;
-    padding-top: 9rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.big-pic-støt a{
-    position: absolute;
-}
-
-.hvad-er-radar{
-display: flex;
-width: 100%;
-padding: 0 13rem;
-}
-
-.hvad-er-radar p, .hvad-er-radar h1 {
-    padding: 1rem;
-}
-
-.hvorfor-bidrage{
-display: flex;
-align-items: center;
-padding: 0 10%;
-}
-
-.hvorfor-bidrage p, .hvorfor-bidrage h2 {
-    padding: 1rem;
-}
-
-.infographic {
-    height: 1000px;
-}
-
-.infographic img {
-    height: 100%;
-}
-
-.pil-venstre{
-    width: 20%;
-    padding: 0 10px;
-}
-
-.pil-venstre img {
-    width:100%;
-    /* transform: rotate(90deg); */
-}
-
-.hvorfor-bidrage article{
-    width: 45%; 
-}
 
 
 
@@ -249,6 +201,3 @@ footer.footer .social-icons img:hover {
     transform: scale(1.2); /* Gør ikoner større ved hover */
     filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
 }
-
-
-
