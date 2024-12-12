@@ -1,6 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/sprite-graffiti');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -103,14 +102,8 @@ header .navbar ul li ul li a {
 
 header .navbar ul li ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
-    color: #b0ff00; /* Neonpink tekstfarve ved hover */
-    text-shadow:  0 0 5px #b0ff00, 
-    0 0 10px #b0ff00, 
-    0 0 20px #7cff00, 
-    0 0 30px #7cff00, 
-    0 0 40px #57ff00, 
-    0 0 50px #57ff00, 
-    0 0 75px #57ff00;;
+    color: #FF073A; /* Neonpink tekstfarve ved hover */
+     text-shadow: 0 0 5px #FF073A, 0 0 10px #FF073A, 0 0 20px #FF073A, 0 0 40px #FF073A;
 }
 
 /* Flere niveauer af undermenu */
@@ -139,56 +132,41 @@ header label {
     display: none; /* Skjult på desktop */
 }
 
-.vip-artikel{
+.ambassadør-artikel{
     display: flex;
     padding-top: 10rem;
     align-items: center;
+    padding-left: 3rem;
 }
 
-.vip-artikel p, .vip-artikel h1 {
+
+.ambassadør-artikel p, .ambassadør-artikel h1 {
     padding: 1rem;
     color: white;
-    text-shadow: 0 0 5px #b0ff00, 
-    0 0 10px #b0ff00, 
-    0 0 20px #7cff00, 
-    0 0 30px #7cff00, 
-    0 0 40px #57ff00, 
-    0 0 50px #57ff00,
-    0 0 75px #57ff00;
+    text-shadow: 0 0 5px #FF073A, 0 0 10px #FF073A, 0 0 20px #FF073A, 0 0 40px #FF073A;
+
 }
 
-.medlemssection {
-    display: flex;
-    margin: 0 10% 10% 10%;
-    gap: 5%;
-    color: white;
-    text-shadow:  0 5px #b0ff00, 
-    0 0 10px #b0ff00, 
-    0 0 20px #7cff00, 
-    0 0 30px #7cff00, 
-    0 0 40px #57ff00, 
-    0 0 50px #57ff00,
-    0 0 75px #57ff00;
+.ambassadør-artikel-2{
+        display: flex;
+        margin: 0 10% 10% 10%;
+        gap: 5%;
+        color: white;
+        text-shadow: 0 0 5px #FF073A, 0 0 10px #FF073A, 0 0 20px #FF073A, 0 0 40px #FF073A;
 }
 
-.medlemsboks {
+.ambassadør-boks {
     width: 30%;
-    height: 500px;
+    height: 200px;
     border: solid 3px #ffffff;
     padding: 30px;
-    box-shadow: 
-    0 0 5px #b0ff00, 
-    0 0 10px #b0ff00, 
-    0 0 20px #7cff00, 
-    0 0 30px #7cff00, 
-    0 0 40px #57ff00, 
-    0 0 50px #57ff00, 
-    inset 0 0 5px #b0ff00, 
-    inset 0 0 10px #b0ff00, 
-    inset 0 0 20px #7cff00, 
-    inset 0 0 30px #7cff00, 
-    inset 0 0 40px #57ff00, 
-    inset 0 0 50px #57ff00;
+    box-shadow: 0 0 5px #FF073A, 0 0 10px #FF073A, 0 0 20px #FF073A, 0 0 40px #FF073A,
+    inset 0 0 5px #FF073A, 
+    inset 0 0 10px #FF073A,
+    inset 0 0 20px #FF073A, 
+    inset 0 0 30px #FF073A,
+    inset 0 0 40px #FF073A, 
+    inset 0 0 50px #FF073A;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -196,24 +174,18 @@ header label {
     justify-content: center;
 }
 
-.medlemsboks p {
-    padding-bottom: 30px;
+.ambassadør-boks-2{
+    width: 100%;
+    height: 400px;
+    font-size: 3rem;
 }
 
-.medlems-info {
-    width: 50%;
+.medlems-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.medlems-info p {
-    padding-bottom: 30px;
-}
-
-.medlems-info h2 {
-    padding-bottom: 1rem;
-}
 
 
 /* Styling til footer */
