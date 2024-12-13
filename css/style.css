@@ -25,122 +25,81 @@ header .logo{
     margin: 0px;
 }
 
-
-/* Generel styling */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    background-color: black;
-    position: fixed;
-    z-index: 1000;
-}
-
-
-
 .logo {
     width: 10vw;
     margin: 0;
     padding: 0;
 }
 
-/* Hovedmenu styling */
-header .navbar ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 20px; /* Afstand mellem hovedmenu-punkter */
-}
-
-header .navbar ul li {
-    position: relative; /* Forankring til undermenu */
-}
-
-header .navbar ul li a {
-    text-decoration: none;
-    font-size: 1,5rem;
-    padding: 18px 70px;
-    display: block;
-    text-align: center;
-    color: white; 
-    background: transparent;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-header .navbar ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-}
-
-/* Undermenu styling */
-header .navbar ul li ul {
-    position: absolute;
-    top: 100%; /* Starter lige under teksten i hovedmenuen */
-    left: 0; /* Ligger direkte under hovedmenuens punkt */
-    width: 100%; /* Matcher hovedmenuens bredde */
-    display: none; /* Skjuler undermenu som standard */
-    z-index: 1000;
-    padding: 0;
-    list-style: none;
-}
-
-header .navbar ul li:hover > ul {
-    display: block; /* Viser undermenu ved hover */
-}
-
-header .navbar ul li ul li {
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Kant mellem undermenu-punkter */
-}
-
-header .navbar ul li ul li a {
-    padding: 10px 20px; /* Mindre padding til undermenu-punkter */
-    text-align: left;
-    color: #fff;
-    display: block;
-}
-
-header .navbar ul li ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ff00ff; /* Neonpink tekstfarve ved hover */
-}
-
-/* Flere niveauer af undermenu */
-header .navbar ul li ul li ul {
-    position: absolute;
+header{
+    position: relative;
     top: 0;
-    left: 100%; /* Placerer næste niveau til højre for første niveau */
-    width: 200px;
+    left: 0;
+    right: 0;
     background: black;
-    display: none;
-    padding: 0;
-}
-
-header .navbar ul li ul li:hover > ul {
-    display: block; /* Viser næste niveau ved hover */
-}
-
-#menu-bar {
-    display: none; /* Skjult som standard */
-}
-
-header label {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    
+ }
+ 
+ header .navbar ul{
+    list-style: none;
+ }
+ 
+ header .navbar ul li{
+    position: relative;
+    float: left;
+ }
+ 
+ header .navbar ul li a {
+    text-decoration: none;
     font-size: 20px;
-    color: #333;
-    cursor: pointer;
-    display: none; /* Skjult på desktop */
-}
-
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
+    padding: 18px;
+    color: white;;
     display: block;
-}
-
+ 
+ }
+ 
+ header .navbar ul li a:hover{
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+ }
+ 
+ header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    display: none;
+ }
+ 
+ header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+ }
+ 
+ header .navbar ul li:focus-within > ul,
+ header .navbar ul li:hover > ul{
+    display: block;
+ }
+ 
+ #menu-bar{
+    display: none;
+ }
+ 
+ header label{
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+ }
+ 
 .big-pic-støt {
     margin: 0;
     padding: 0;
-    padding-top: 9rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -256,52 +215,56 @@ footer.footer .social-icons img:hover {
 }
 
 
+/* tablet */ 
+@media (min-width: 601px) and (max-width: 1023px) {
 
-@media (min-width: 425px) and (max-width: 1023){
     header{
-        padding: 20px;
-     }
-     
-     header label{
-        display: block;
-     }
-     
-     header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #3391c9;
-        border-top: 1px rgba(0,0,0,0.1);
-        display: none;
-     }
-     
-     header .navbar ul li{
-        width: 100%;
-     }
-     
-     header .navbar ul li ul{
-        position: relative;
-        width: 100%;
-     }
-     
-     header .navbar ul li ul li{
-        background: #3391c9;
-     }
-     
-     header .navbar ul li ul li ul{
-        width: 100%;
-        left: 0;
-     }
-     
-     #menu-bar:checked ~ .navbar{
-        display: block;
-     }
+       padding: 20px;
+       display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    header label{
+       display: block;
+    }
+    
+    header .navbar{
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0;
+       border-top: 1px rgba(0,0,0,0.1);
+       display: none;
+    }
+    
+    header .navbar ul li{
+       width: 100%;
+    }
+    
+    header .navbar ul li ul{
+       position: relative;
+       width: 100%;
+    }
+    
+    
+    header .navbar ul li ul li ul{
+       width: 100%;
+       left: 0;
+    }
+    
+    #menu-bar:checked ~ .navbar{
+       display: block;
+    }
 }
 
-@media(max-width: 424px){
+
+
+
+@media(max-width: 600px){
     header{
         padding: 20px;
+        display: flex;
+        flex-direction: row-reverse;
      }
      
      header label{
@@ -313,7 +276,6 @@ footer.footer .social-icons img:hover {
         top: 100%;
         left: 0;
         right: 0;
-        background: #3391c9;
         border-top: 1px rgba(0,0,0,0.1);
         display: none;
      }
@@ -325,10 +287,6 @@ footer.footer .social-icons img:hover {
      header .navbar ul li ul{
         position: relative;
         width: 100%;
-     }
-     
-     header .navbar ul li ul li{
-        background: #3391c9;
      }
      
      header .navbar ul li ul li ul{
@@ -341,6 +299,7 @@ footer.footer .social-icons img:hover {
      }  
 }
 
-
-  
+ 
+ 
+ 
  
