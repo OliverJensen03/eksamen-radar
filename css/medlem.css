@@ -79,6 +79,7 @@ header{
  header .navbar ul li ul li{
     width: 100%;
     border-top: 1px solid rgba(0,0,0,0.1);
+    background-color: #202020;
  }
  
  header .navbar ul li:focus-within > ul,
@@ -268,6 +269,7 @@ footer.footer .social-icons img:hover {
        padding: 20px;
        display: flex;
         flex-direction: row-reverse;
+        z-index: 1000;
     }
     
     header label{
@@ -285,6 +287,7 @@ footer.footer .social-icons img:hover {
     
     header .navbar ul li{
        width: 100%;
+       background-color: black;
     }
     
     header .navbar ul li ul{
@@ -311,6 +314,7 @@ footer.footer .social-icons img:hover {
         padding: 20px;
         display: flex;
         flex-direction: row-reverse;
+        z-index: 1000;
      }
      
      header label{
@@ -328,6 +332,7 @@ footer.footer .social-icons img:hover {
      
      header .navbar ul li{
         width: 100%;
+        background-color: black;
      }
      
      header .navbar ul li ul{

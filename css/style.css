@@ -79,6 +79,7 @@ header{
  header .navbar ul li ul li{
     width: 100%;
     border-top: 1px solid rgba(0,0,0,0.1);
+    background-color: #202020;
  }
  
  header .navbar ul li:focus-within > ul,
@@ -95,6 +96,10 @@ header{
     color: #ffffff;
     cursor: pointer;
     display: none;
+ }
+
+ main {
+    height: auto;
  }
  
 .big-pic-støt {
@@ -145,7 +150,6 @@ padding: 0 10%;
 
 .pil-venstre img {
     width:100%;
-    /* transform: rotate(90deg); */
 }
 
 .hvorfor-bidrage article{
@@ -222,6 +226,7 @@ footer.footer .social-icons img:hover {
        padding: 20px;
        display: flex;
         flex-direction: row-reverse;
+        z-index: 1000;
     }
     
     header label{
@@ -239,6 +244,7 @@ footer.footer .social-icons img:hover {
     
     header .navbar ul li{
        width: 100%;
+       background-color: black;
     }
     
     header .navbar ul li ul{
@@ -265,6 +271,7 @@ footer.footer .social-icons img:hover {
         padding: 20px;
         display: flex;
         flex-direction: row-reverse;
+        z-index: 1000;
      }
      
      header label{
@@ -282,8 +289,10 @@ footer.footer .social-icons img:hover {
      
      header .navbar ul li{
         width: 100%;
+        background-color: black;
      }
      
+
      header .navbar ul li ul{
         position: relative;
         width: 100%;
@@ -297,6 +306,139 @@ footer.footer .social-icons img:hover {
      #menu-bar:checked ~ .navbar{
         display: block;
      }  
+
+     .big-pic-støt {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .big-pic-støt a{
+        position: absolute;
+    }
+    
+    .hvad-er-radar{
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        padding-top: 1rem;
+        flex-direction: column;
+    }
+    
+    .hvad-er-radar p, .hvad-er-radar h1 {
+        padding: 1rem;
+    }
+
+    .støt-skilt{
+        width: 100%;
+    }
+
+    .guitar img{
+        width: 100%;
+    }
+    
+    .hvorfor-bidrage{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    flex-direction: column-reverse;
+    }
+    
+    .hvorfor-bidrage p, .hvorfor-bidrage h2 {
+        padding: 1rem;
+    }
+    
+    .infographic {
+        height: 100%;
+    }
+    
+    .infographic img {
+     height: auto;
+     width: 100%
+    }
+    
+    .pil-venstre{
+        width: 20%;
+        padding: 0 10px;
+    }
+    
+    .pil-venstre img {
+        width:100%;
+        transform: rotate(270deg);
+    }
+    
+    .hvorfor-bidrage article{
+        width: 70%; 
+    }
+    
+    
+    
+    /* Styling til footer */
+    footer.footer {
+        background-color: black; /* Sort baggrund */
+        color: white; 
+        display: flex;
+        flex-direction: column; /* Sørger for at elementerne placeres horisontalt */
+        justify-content: space-between; /* Placerer tekst og ikoner på hver sin side */
+        align-items: center; /* Justerer tekst og ikoner vertikalt */
+        padding: 20px;
+        border-top: 2px solid #ff00ff; /* Neon-linje over footeren */
+        flex-wrap: nowrap; /* Sørger for at elementerne ikke overlapper på små skærme */
+    }
+    
+    /* Styling for footer-text */
+    footer.footer .footer-text {
+        display: flex;
+        flex-direction: column; /* Stabler paragraf-elementerne vertikalt */
+        gap: 1px; /* Afstand mellem hvert paragraf-element */
+        flex-grow: 1; /* Giver plads til at de sociale ikoner kan centreres */
+    }
+    
+    /* Tekst styling - venstrejusteret */
+    footer.footer p {
+        font-size: 1rem;
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+        text-align: left; /* Juster tekst til venstre */
+    }
+    
+    /* Link styling */
+    footer.footer a {
+        color: #ff00ff;
+        text-decoration: none;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+    
+    footer.footer a:hover {
+        transform: scale(1.1); /* Gør links større ved hover */
+        text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; /* Neon-effekt ved hover */
+    }
+    
+    /* Social ikoner styling */
+    footer.footer .social-icons {
+        display: grid;
+        justify-content: center; /* Censurere ikonerne centralt */
+        gap: 15px; /* Afstand mellem ikoner */
+        margin-top: 20px; /* Tilføj lidt afstand over sociale ikoner */
+        flex-grow: 2; /* Giver plads til ikonerne så de centreres korrekt */
+        grid-template-columns: 2fr 2fr;
+    }
+    
+    footer.footer .social-icons img {
+        width: 4rem; /* Størrelse på ikoner */
+        height: 4rem;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    footer.footer .social-icons img:hover {
+        transform: scale(1.2); /* Gør ikoner større ved hover */
+        filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
+    }
+    
 }
 
  
