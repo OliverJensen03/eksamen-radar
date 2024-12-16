@@ -142,6 +142,7 @@ header label {
     0 0 75px #57ff00;
 }
 
+
 .medlemssection {
     display: flex;
     margin: 0 10% 10% 10%;
@@ -348,4 +349,138 @@ footer.footer .social-icons img:hover {
      #menu-bar:checked ~ .navbar{
         display: block;
      }  
+
+     .vip-skilt img{
+        width: 100%;
+     }
+
+     .vip-artikel{
+        display: flex;
+        padding-top: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .vip-artikel p, .vip-artikel h1 {
+        padding: 1rem;
+        color: white;
+        text-shadow: 0 0 5px #b0ff00, 
+        0 0 10px #b0ff00, 
+        0 0 20px #7cff00, 
+        0 0 30px #7cff00, 
+        0 0 40px #57ff00, 
+        0 0 50px #57ff00,
+        0 0 75px #57ff00;
+    }
+    
+
+
+
+    .medlemssection {
+        display: flex;
+        margin: 0 0% 0% 0%;
+        gap: 5%;
+        color: white;
+        text-shadow:  0 0px #b0ff00, 
+        0 0 10px #b0ff00, 
+        0 0 20px #7cff00, 
+        0 0 30px #7cff00, 
+        0 0 40px #57ff00, 
+        0 0 50px #57ff00,
+        0 0 75px #57ff00;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    .medlemsboks {
+        width: 80%;
+        height: 500px;
+        border: solid 3px #ffffff;
+        padding: 30px;
+        box-shadow: 
+        0 0 5px #b0ff00, 
+        0 0 10px #b0ff00, 
+        0 0 20px #7cff00, 
+        0 0 30px #7cff00, 
+        0 0 40px #57ff00, 
+        0 0 50px #57ff00, 
+        inset 0 0 5px #b0ff00, 
+        inset 0 0 10px #b0ff00, 
+        inset 0 0 20px #7cff00, 
+        inset 0 0 30px #7cff00, 
+        inset 0 0 40px #57ff00, 
+        inset 0 0 50px #57ff00;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .medlemsboks p {
+        padding-bottom: 30px;
+    }
+    
+    .medlems-info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .medlems-info p {
+        padding-bottom: 30px;
+    }
+    
+    .medlems-info h2 {
+        padding-bottom: 1rem;
+    }
+
+
+
+
+
+       /* Tekst styling - venstrejusteret */
+    footer.footer p {
+        font-size: 1rem;
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+        text-align: left; /* Juster tekst til venstre */
+    }
+    
+    /* Link styling */
+    footer.footer a {
+        color: #ff00ff;
+        text-decoration: none;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+    
+    footer.footer a:hover {
+        transform: scale(1.1); /* Gør links større ved hover */
+        text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; /* Neon-effekt ved hover */
+    }
+    
+    /* Social ikoner styling */
+    footer.footer .social-icons {
+        display: grid;
+        justify-content: center; /* Censurere ikonerne centralt */
+        gap: 15px; /* Afstand mellem ikoner */
+        margin-top: 20px; /* Tilføj lidt afstand over sociale ikoner */
+        flex-grow: 2; /* Giver plads til ikonerne så de centreres korrekt */
+        grid-template-columns: 2fr 2fr;
+    }
+    
+    footer.footer .social-icons img {
+        width: 4rem; /* Størrelse på ikoner */
+        height: 4rem;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    footer.footer .social-icons img:hover {
+        transform: scale(1.2); /* Gør ikoner større ved hover */
+        filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
+    }
 }
