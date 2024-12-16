@@ -128,6 +128,7 @@ header label {
     display: flex;
     padding-top: 10rem;
     align-items: center;
+    padding-left: 8rem;
 }
 
 .vip-artikel p, .vip-artikel h1 {
@@ -146,7 +147,7 @@ header label {
 .medlemssection {
     display: flex;
     margin: 0 10% 10% 10%;
-    gap: 5%;
+    gap: 20%;
     color: white;
     text-shadow:  0 0px #b0ff00, 
     0 0 10px #b0ff00, 
@@ -200,6 +201,7 @@ header label {
 .medlems-info h2 {
     padding-bottom: 1rem;
 }
+
 
 
 /* Styling til footer */
@@ -305,6 +307,152 @@ footer.footer .social-icons img:hover {
     #menu-bar:checked ~ .navbar{
        display: block;
     }
+
+    .vip-skilt img{
+        max-width: 20rem;
+     }
+
+    .vip-artikel{
+        display: flex;
+        padding-top: 1rem;
+        align-items: center;
+        padding-bottom: 4rem;
+        padding-left: 1rem;
+    }
+    
+    .vip-artikel p, .vip-artikel h1 {
+        padding: 1rem;
+        color: white;
+        text-shadow: 0 0 5px #b0ff00, 
+        0 0 10px #b0ff00, 
+        0 0 20px #7cff00, 
+        0 0 30px #7cff00, 
+        0 0 40px #57ff00, 
+        0 0 50px #57ff00,
+        0 0 75px #57ff00;
+    }
+    
+    
+    .medlemssection {
+        display: flex;
+        margin: 0 10% 5% 4%;
+        gap: 20%;
+        color: white;
+        text-shadow:  0 0px #b0ff00, 
+        0 0 10px #b0ff00, 
+        0 0 20px #7cff00, 
+        0 0 30px #7cff00, 
+        0 0 40px #57ff00, 
+        0 0 50px #57ff00,
+        0 0 75px #57ff00;
+    }
+    
+    .medlemsboks {
+        width: 40%;
+        height: 500px;
+        border: solid 3px #ffffff;
+        padding: 30px;
+        box-shadow: 
+        0 0 5px #b0ff00, 
+        0 0 10px #b0ff00, 
+        0 0 20px #7cff00, 
+        0 0 30px #7cff00, 
+        0 0 40px #57ff00, 
+        0 0 50px #57ff00, 
+        inset 0 0 5px #b0ff00, 
+        inset 0 0 10px #b0ff00, 
+        inset 0 0 20px #7cff00, 
+        inset 0 0 30px #7cff00, 
+        inset 0 0 40px #57ff00, 
+        inset 0 0 50px #57ff00;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .medlemsboks p {
+        padding-bottom: 30px;
+    }
+    
+    .medlems-info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .medlems-info p {
+        padding-bottom: 30px;
+    }
+    
+    .medlems-info h2 {
+        padding-bottom: 1rem;
+    }
+
+
+
+
+      /* Styling til footer */
+footer.footer {
+    background-color: black; /* Sort baggrund */
+    color: white; 
+    display: flex;
+    flex-direction: row; /* Sørger for at elementerne placeres horisontalt */
+    justify-content: space-between; /* Placerer tekst og ikoner på hver sin side */
+    align-items: center; /* Justerer tekst og ikoner vertikalt */
+    padding: 20px;
+    border-top: 2px solid #ff00ff; /* Neon-linje over footeren */
+    flex-wrap: wrap; /* Sørger for at elementerne ikke overlapper på små skærme */
+}
+
+/* Styling for footer-text */
+footer.footer .footer-text {
+    display: flex;
+    flex-direction: column; /* Stabler paragraf-elementerne vertikalt */
+    gap: 10px; /* Afstand mellem hvert paragraf-element */
+    flex-grow: 1; /* Giver plads til at de sociale ikoner kan centreres */
+}
+
+/* Tekst styling - venstrejusteret */
+footer.footer p {
+    font-size: 1rem;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    text-align: left; /* Juster tekst til venstre */
+}
+
+/* Link styling */
+footer.footer a {
+    color: #ff00ff;
+    text-decoration: none;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer.footer a:hover {
+    transform: scale(1.1); /* Gør links større ved hover */
+    text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; /* Neon-effekt ved hover */
+}
+
+/* Social ikoner styling */
+footer.footer .social-icons {
+    display: flex;
+    justify-content: center; /* Censurere ikonerne centralt */
+    gap: 30px; /* Afstand mellem ikoner */
+    margin-top: 20px; /* Tilføj lidt afstand over sociale ikoner */
+    flex-grow: 2; /* Giver plads til ikonerne så de centreres korrekt */
+}
+
+footer.footer .social-icons img {
+    width: 80px; /* Størrelse på ikoner */
+    height: 80px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer.footer .social-icons img:hover {
+    transform: scale(1.2); /* Gør ikoner større ved hover */
+    filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
+}
 }
 
 
@@ -360,6 +508,7 @@ footer.footer .social-icons img:hover {
         align-items: center;
         flex-wrap: wrap;
         flex-direction: column;
+        padding-left: 1rem;
     }
     
     .vip-artikel p, .vip-artikel h1 {
