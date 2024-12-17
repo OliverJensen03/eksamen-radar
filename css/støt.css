@@ -1,21 +1,23 @@
 @import url('https://fonts.cdnfonts.com/css/sprite-graffiti');
 
-
+/* Standard css reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Indstillinger for baggrund og tekst på hele siden */
 body{
     background-color: black;
     font-family: 'Sprite Graffiti', sans-serif;
-    color: whitesmoke;  /* Neon pink color */
-    font-size: 24px;  /* Example font size */
-    font-weight: bold; /* Make it stand out */
-    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    color: whitesmoke;  
+    font-size: 24px;  
+    font-weight: bold; 
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff; /* Giver neonpink farve og glow effekt */
 }
 
+/* Styling af navigationsbar */
 header .logo{
     margin-left: 10px;
     padding-left: 0;
@@ -48,6 +50,7 @@ header{
     list-style: none;
  }
  
+ /* Styling af menupunkter */
  header .navbar ul li{
     position: relative;
     float: left;
@@ -62,11 +65,13 @@ header{
  
  }
  
+ /* Hover-effekt på menulinks */
  header .navbar ul li a:hover{
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
  }
  
+ /* Dropdown-menu */
  header .navbar ul li ul{
     position: absolute;
     left: 0;
@@ -85,6 +90,7 @@ header{
     display: block;
  }
  
+  /* Skjuler menu-ikonet som standard */
  #menu-bar{
     display: none;
  }
@@ -96,6 +102,7 @@ header{
     display: none;
  }
 
+ /* Styling af hovedindhold på siden starter her */
 .tak-artikel{
     display: flex;
     padding-top: 10rem;
@@ -107,10 +114,10 @@ header{
 .tak-artikel p, .tak-artikel h1 {
     padding: 1rem;
     color: white;
-    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-    0 0 10px #00FFFF, /* Outer glow */
-    0 0 20px #00FFFF, /* Extended glow */
-    0 0 30px #1E90FF, /* Slight color variation */
+    text-shadow: 0 0 5px #00FFFF,  /* Giver neonblå farve og glow effekt */
+    0 0 10px #00FFFF, 
+    0 0 20px #00FFFF, 
+    0 0 30px #1E90FF, 
     0 0 40px #1E90FF;;
 
 }
@@ -122,7 +129,7 @@ header{
     gap: 2rem;
 }
 
-/* Button Section */
+/* Styling af knappe Section */
 .contribute-options {
     display: flex;
     flex-direction: column;
@@ -132,12 +139,13 @@ header{
     padding: 2.5rem;
 }
 
+/* Styling af støtte knapper */
 .contribute-button {
     font-family: 'Sprite Graffiti', sans-serif;
-    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-    0 0 10px #00FFFF, /* Outer glow */
-    0 0 20px #00FFFF, /* Extended glow */
-    0 0 30px #1E90FF, /* Slight color variation */
+    text-shadow: 0 0 5px #00FFFF,  
+    0 0 10px #00FFFF, 
+    0 0 20px #00FFFF, 
+    0 0 30px #1E90FF, 
     0 0 40px #1E90FF;;
     background-color: transparent;
     color: #0ff;
@@ -150,8 +158,8 @@ header{
     border-radius: 10px;
     box-shadow: 0 0 15px #0ff, 0 0 30px #0ff inset;
     transition: transform 0.3s, box-shadow 0.3s;
-    text-decoration: none; /* Fjern underlinje for link-knappen */
-    display: inline-block; /* Sørg for, at linket opfører sig som en knap */
+    text-decoration: none; /* Fjerner underlinje for link-knappen */
+    display: inline-block; /* Sørger for, at linket fungerer som en knap */
 }
 
 .contribute-button:hover {
@@ -159,7 +167,7 @@ header{
     box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
 }
 
-/* Text Section */
+
 .contribute-info {
     flex: 1;
     max-width: 50%;
@@ -172,10 +180,10 @@ header{
     font-size: 2rem;
     margin-bottom: 1rem;
     color: white;
-    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-    0 0 10px #00FFFF, /* Outer glow */
-    0 0 20px #00FFFF, /* Extended glow */
-    0 0 30px #1E90FF, /* Slight color variation */
+    text-shadow: 0 0 5px #00FFFF,  
+    0 0 10px #00FFFF, 
+    0 0 20px #00FFFF, 
+    0 0 30px #1E90FF, 
     0 0 40px #1E90FF;;
 }
 
@@ -183,40 +191,40 @@ header{
     font-size: 1.4rem;
     line-height: 1.5;
     color: white;
-    text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-    0 0 10px #00FFFF, /* Outer glow */
-    0 0 20px #00FFFF, /* Extended glow */
-    0 0 30px #1E90FF, /* Slight color variation */
+    text-shadow: 0 0 5px #00FFFF,  
+    0 0 10px #00FFFF, 
+    0 0 20px #00FFFF, 
+    0 0 30px #1E90FF, 
     0 0 40px #1E90FF;;
 }
 
 
 /* Styling til footer */
 footer.footer {
-    background-color: black; /* Sort baggrund */
+    background-color: black; 
     color: white; 
     display: flex;
-    flex-direction: row; /* Sørger for at elementerne placeres horisontalt */
-    justify-content: space-between; /* Placerer tekst og ikoner på hver sin side */
-    align-items: center; /* Justerer tekst og ikoner vertikalt */
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
     border-top: 2px solid #ff00ff; /* Neon-linje over footeren */
-    flex-wrap: wrap; /* Sørger for at elementerne ikke overlapper på små skærme */
+    flex-wrap: wrap; 
 }
 
-/* Styling for footer-text */
+/* Styling af footer-text */
 footer.footer .footer-text {
     display: flex;
-    flex-direction: column; /* Stabler paragraf-elementerne vertikalt */
-    gap: 10px; /* Afstand mellem hvert paragraf-element */
-    flex-grow: 1; /* Giver plads til at de sociale ikoner kan centreres */
+    flex-direction: column; 
+    gap: 10px; 
+    flex-grow: 1; 
 }
 
-/* Tekst styling - venstrejusteret */
+
 footer.footer p {
     font-size: 1rem;
     text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-    text-align: left; /* Juster tekst til venstre */
+    text-align: left; 
 }
 
 /* Link styling */
@@ -234,10 +242,10 @@ footer.footer a:hover {
 /* Social ikoner styling */
 footer.footer .social-icons {
     display: flex;
-    justify-content: center; /* Censurere ikonerne centralt */
-    gap: 100px; /* Afstand mellem ikoner */
-    margin-top: 20px; /* Tilføj lidt afstand over sociale ikoner */
-    flex-grow: 2; /* Giver plads til ikonerne så de centreres korrekt */
+    justify-content: center; 
+    gap: 100px; 
+    margin-top: 20px; 
+    flex-grow: 2; 
 }
 
 footer.footer .social-icons img {
@@ -251,9 +259,10 @@ footer.footer .social-icons img:hover {
     filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
 }
 
-/* tablet */ 
+/* styling til tablet */ 
 @media (min-width: 601px) and (max-width: 1023px) {
 
+    /* Burgermenu */ 
     header{
        padding: 20px;
        display: flex;
@@ -295,6 +304,7 @@ footer.footer .social-icons img:hover {
     }
 
 
+    /* Styling af main inholdet på tablet starter her */
     .tak-artikel{
         display: flex;
         padding-top: 1rem;
@@ -306,10 +316,10 @@ footer.footer .social-icons img:hover {
     .tak-artikel p, .tak-artikel h1 {
         padding: 1rem;
         color: white;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
     }
 
@@ -326,7 +336,7 @@ footer.footer .social-icons img:hover {
         padding-bottom: 2rem;
     }
     
-    /* Button Section */
+    /* knappe Section */
     .contribute-options {
         display: flex;
         flex-direction: column;
@@ -336,12 +346,13 @@ footer.footer .social-icons img:hover {
         padding: 2.5rem;
     }
     
+     /* stylign af knapper til tablet */
     .contribute-button {
         font-family: 'Sprite Graffiti', sans-serif;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
         background-color: transparent;
         color: #0ff;
@@ -354,8 +365,8 @@ footer.footer .social-icons img:hover {
         border-radius: 10px;
         box-shadow: 0 0 15px #0ff, 0 0 30px #0ff inset;
         transition: transform 0.3s, box-shadow 0.3s;
-        text-decoration: none; /* Fjern underlinje for link-knappen */
-        display: inline-block; /* Sørg for, at linket opfører sig som en knap */
+        text-decoration: none; 
+        display: inline-block; 
     }
     
     .contribute-button:hover {
@@ -363,7 +374,6 @@ footer.footer .social-icons img:hover {
         box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
     }
     
-    /* Text Section */
     .contribute-info {
         flex: 1;
         max-width: 50%;
@@ -376,10 +386,10 @@ footer.footer .social-icons img:hover {
         font-size: 2rem;
         margin-bottom: 1rem;
         color: white;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
     }
     
@@ -387,45 +397,45 @@ footer.footer .social-icons img:hover {
         font-size: 1.4rem;
         line-height: 1.5;
         color: white;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
     }
     
 
 
 
-    /* Styling til footer */
+    /* Styling til footer på tablet */
 footer.footer {
-    background-color: black; /* Sort baggrund */
+    background-color: black; 
     color: white; 
     display: flex;
-    flex-direction: row; /* Sørger for at elementerne placeres horisontalt */
-    justify-content: space-between; /* Placerer tekst og ikoner på hver sin side */
-    align-items: center; /* Justerer tekst og ikoner vertikalt */
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
-    border-top: 2px solid #ff00ff; /* Neon-linje over footeren */
-    flex-wrap: wrap; /* Sørger for at elementerne ikke overlapper på små skærme */
+    border-top: 2px solid #ff00ff; 
+    flex-wrap: wrap; 
 }
 
-/* Styling for footer-text */
+
 footer.footer .footer-text {
     display: flex;
-    flex-direction: column; /* Stabler paragraf-elementerne vertikalt */
-    gap: 10px; /* Afstand mellem hvert paragraf-element */
-    flex-grow: 1; /* Giver plads til at de sociale ikoner kan centreres */
+    flex-direction: column; 
+    gap: 10px; 
+    flex-grow: 1; 
 }
 
-/* Tekst styling - venstrejusteret */
+
 footer.footer p {
     font-size: 1rem;
     text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-    text-align: left; /* Juster tekst til venstre */
+    text-align: left; 
 }
 
-/* Link styling */
+
 footer.footer a {
     color: #ff00ff;
     text-decoration: none;
@@ -433,17 +443,17 @@ footer.footer a {
 }
 
 footer.footer a:hover {
-    transform: scale(1.1); /* Gør links større ved hover */
-    text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; /* Neon-effekt ved hover */
+    transform: scale(1.1); 
+    text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; 
 }
 
-/* Social ikoner styling */
+
 footer.footer .social-icons {
     display: flex;
-    justify-content: center; /* Censurere ikonerne centralt */
-    gap: 30px; /* Afstand mellem ikoner */
-    margin-top: 20px; /* Tilføj lidt afstand over sociale ikoner */
-    flex-grow: 2; /* Giver plads til ikonerne så de centreres korrekt */
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 20px; 
+    flex-grow: 2; 
 }
 
 footer.footer .social-icons img {
@@ -453,15 +463,17 @@ footer.footer .social-icons img {
 }
 
 footer.footer .social-icons img:hover {
-    transform: scale(1.2); /* Gør ikoner større ved hover */
-    filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
+    transform: scale(1.2); 
+    filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); 
 }
 }
 
 
 
-
+ /* styling til mobil */
 @media(max-width: 600px){
+      
+    /* Burgermenu */ 
     header{
         padding: 20px;
         display: flex;
@@ -501,6 +513,7 @@ footer.footer .social-icons img:hover {
         display: block;
      }  
 
+     /* Styling af main inholdet til mobil starter her */
      .radar-tak img{
         width: 100%;
      }
@@ -518,10 +531,10 @@ footer.footer .social-icons img:hover {
     .tak-artikel p, .tak-artikel h1 {
         padding: 1rem;
         color: white;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
     
     }
@@ -536,7 +549,7 @@ footer.footer .social-icons img:hover {
         padding-bottom: 3rem;
     }
     
-    /* Button Section */
+    /* knappe Section */
     .contribute-options {
         display: flex;
         flex-direction: column;
@@ -546,12 +559,13 @@ footer.footer .social-icons img:hover {
         padding: 2.5rem;
     }
     
+    /* Styling af knapper til mobil */
     .contribute-button {
         font-family: 'Sprite Graffiti', sans-serif;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
         background-color: transparent;
         color: #0ff;
@@ -573,7 +587,6 @@ footer.footer .social-icons img:hover {
         box-shadow: 0 0 20px #0ff, 0 0 40px #0ff inset;
     }
     
-    /* Text Section */
     .contribute-info {
         flex: 1;
         max-width: 100%;
@@ -587,10 +600,10 @@ footer.footer .social-icons img:hover {
         font-size: 2rem;
         margin-bottom: 1rem;
         color: white;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
     }
     
@@ -598,40 +611,38 @@ footer.footer .social-icons img:hover {
         font-size: 1.4rem;
         line-height: 1.5;
         color: white;
-        text-shadow: 0 0 5px #00FFFF,  /* Inner glow */
-        0 0 10px #00FFFF, /* Outer glow */
-        0 0 20px #00FFFF, /* Extended glow */
-        0 0 30px #1E90FF, /* Slight color variation */
+        text-shadow: 0 0 5px #00FFFF,  
+        0 0 10px #00FFFF, 
+        0 0 20px #00FFFF, 
+        0 0 30px #1E90FF, 
         0 0 40px #1E90FF;;
     }
 
-
-
+    /* Styling af footer til mobil */
      footer.footer {
-        background-color: black; /* Sort baggrund */
+        background-color: black; 
         color: white; 
         display: flex;
-        flex-direction: column; /* Sørger for at elementerne placeres horisontalt */
-        justify-content: space-between; /* Placerer tekst og ikoner på hver sin side */
-        align-items: center; /* Justerer tekst og ikoner vertikalt */
+        flex-direction: column; 
+        justify-content: space-between; 
+        align-items: center; 
         padding: 20px;
-        border-top: 2px solid #ff00ff; /* Neon-linje over footeren */
-        flex-wrap: nowrap; /* Sørger for at elementerne ikke overlapper på små skærme */
+        border-top: 2px solid #ff00ff; 
+        flex-wrap: nowrap; 
     }
     
-    /* Styling for footer-text */
     footer.footer .footer-text {
         display: flex;
-        flex-direction: column; /* Stabler paragraf-elementerne vertikalt */
-        gap: 1px; /* Afstand mellem hvert paragraf-element */
-        flex-grow: 1; /* Giver plads til at de sociale ikoner kan centreres */
+        flex-direction: column; 
+        gap: 1px; 
+        flex-grow: 1; 
     }
     
-    /* Tekst styling - venstrejusteret */
+    
     footer.footer p {
         font-size: 1rem;
         text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-        text-align: left; /* Juster tekst til venstre */
+        text-align: left; 
     }
     
     /* Link styling */
@@ -649,11 +660,11 @@ footer.footer .social-icons img:hover {
     /* Social ikoner styling */
     footer.footer .social-icons {
         display: grid;
-        justify-content: center; /* Censurere ikonerne centralt */
-        gap: 15px; /* Afstand mellem ikoner */
-        margin-top: 20px; /* Tilføj lidt afstand over sociale ikoner */
-        flex-grow: 2; /* Giver plads til ikonerne så de centreres korrekt */
-        grid-template-columns: 2fr 2fr;
+        justify-content: center; 
+        gap: 15px; 
+        margin-top: 20px; 
+        flex-grow: 2; 
+        grid-template-columns: 2fr 2fr; /* Placerer ikonerne i 2 rækker over hindanden */
     }
     
     footer.footer .social-icons img {
@@ -663,8 +674,8 @@ footer.footer .social-icons img:hover {
     }
     
     footer.footer .social-icons img:hover {
-        transform: scale(1.2); /* Gør ikoner større ved hover */
-        filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); /* Ekstra glød ved hover */
+        transform: scale(1.2); 
+        filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 30px #ff00ff); 
     }
     
 }
